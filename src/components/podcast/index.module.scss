@@ -1,7 +1,7 @@
 @import "../../assets/mixins";
 
 .wrapper {
-  // background-color: var(--outline);
+  background-color: var(--outline);
   text-align: center;
 }
 
@@ -22,16 +22,15 @@
 }
 
 .headline {
-  color: var(--fill);
-  font-family: "Sensations";
-  font-size: 4em;
+  color: #0631fc;
+  font-size: 1.4em;
   line-height: 1;
   margin-bottom: 8px;
-  transform: rotate(-6deg);
+  text-transform: uppercase;
 }
 
 .cta {
-  color: var(--black);
+  color: #ff32ff;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
@@ -39,7 +38,7 @@
   text-decoration: none;
 
   &:hover {
-    color: var(--fill);
+    color: #0631fc;
     text-decoration: none;
   }
 }
