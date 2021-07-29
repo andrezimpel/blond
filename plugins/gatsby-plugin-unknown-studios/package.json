@@ -1,0 +1,25 @@
+{
+  "name": "gatsby-plugin-unknown-studios",
+  "description": "Adds developer branding for UNKNOWN STUDIOS.",
+  "version": "0.0.1",
+  "author": "Andre Zimpel <andre@unknownbasics.com>",
+  "dependencies": {
+    "@babel/runtime": "^7.11.2"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": "^2.24.77 || ^3.0.0",
+    "react": "^16.13.1 || ^17.0.1",
+    "react-dom": "^16.13.1 || ^17.0.1"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__",
+    "format": "eslint ./src --ext js,jsx --fix"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
+
+.footer {
+  background-color: white;
+  padding: 24px 0;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    padding: 40px 0;
+  }
+
+  a {
+    display: inline-block;
+    width: 180px;
+
+    svg {
+      fill: var(--fill);
+      max-width: 100%;
+    }
+  }
+}

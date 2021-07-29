@@ -1,6 +1,7 @@
 import "./layout.module.scss"
 
-import Header from "./header"
+import Footer from "./header"
+import Header from "./footer"
 import React from "react"
 
 const Layout = ({ children }) => {
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
     <>
       <Header/>
       <main>{children}</main>
+      <Footer/>
     </>
   )
 }
