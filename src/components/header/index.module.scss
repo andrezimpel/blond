@@ -2,16 +2,6 @@
 @import "~bootstrap/scss/_variables.scss";
 @import "~bootstrap/scss/_mixins.scss";
 
-@font-face {
-  font-family: 'Sensations';
-  src: local('Sensations and Qualities'), local('SensationsandQualities'),
-      url('../fonts/SensationsandQualities.woff2') format('woff2'),
-      url('../fonts/SensationsandQualities.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 .header {
   background-color: white;
   padding: 24px 0;
