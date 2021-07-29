@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
+
+@font-face {
+  font-family: 'Sensations';
+  src: local('Sensations and Qualities'), local('SensationsandQualities'),
+      url('../fonts/SensationsandQualities.woff2') format('woff2'),
+      url('../fonts/SensationsandQualities.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.header {
+  background-color: white;
+  padding: 24px 0;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    padding: 40px 0;
+  }
+
+  a {
+    display: inline-block;
+    width: 180px;
+
+    svg {
+      fill: var(--fill);
+      max-width: 100%;
+    }
+  }
+}
