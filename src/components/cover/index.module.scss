@@ -18,7 +18,11 @@
 }
 
 .text {
-  margin-top: 32px;
+  margin-top: 16px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 32px;
+  }
 }
 
 .headline {
