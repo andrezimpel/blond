@@ -1,23 +1,25 @@
-@import "~bootstrap/scss/_functions.scss";
-@import "~bootstrap/scss/_variables.scss";
-@import "~bootstrap/scss/_mixins.scss";
+@import "../../assets/mixins";
 
 .footer {
-  background-color: white;
-  padding: 24px 0;
-  text-align: center;
+  @include container-enhanced;
 
-  @include media-breakpoint-up(md) {
-    padding: 40px 0;
-  }
+  margin-top: 80px;
+}
 
-  a {
-    display: inline-block;
-    width: 180px;
+.items {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 
-    svg {
-      fill: var(--fill);
-      max-width: 100%;
-    }
+.item {
+  color: var(--black);
+  display: inline-block;
+  font-weight: bold;
+  padding: 4px 16px;
+
+  &:hover {
+    color: var(--fill);
+    text-decoration: none;
   }
 }

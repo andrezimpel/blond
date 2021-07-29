@@ -1,6 +1,7 @@
+import { footer, item, items } from './index.module.scss'
+
 import { Link } from "gatsby"
 import React from "react"
-import { header } from './index.module.scss'
 
 const metaNavigation = [
   {
@@ -22,10 +23,12 @@ const metaNavigation = [
 ]
 
 const Footer = () => (
-  <footer className={header}>
-    <Link to="/">
-
-    </Link>
+  <footer className={footer}>
+    <div className={items}>
+      {metaNavigation.map(({ to, name }, index) => (
+        <Link key={index} to={to} className={item}>{name}</Link>
+      ))}
+    </div>
   </footer>
 )
 
