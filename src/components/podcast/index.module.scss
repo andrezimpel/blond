@@ -22,7 +22,7 @@
 }
 
 .headline {
-  color: #0631fc;
+  color: var(--blue);
   font-size: 1.4em;
   line-height: 1;
   margin-bottom: 8px;
@@ -30,7 +30,7 @@
 }
 
 .cta {
-  color: #ff32ff;
+  color: var(--pink);
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
