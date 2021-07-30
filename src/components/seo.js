@@ -19,7 +19,7 @@ function Seo({ description, lang, meta, title, url }) {
       query {
         site {
           siteMetadata {
-            siteTitle: title
+            title
             siteUrl
           }
         }
