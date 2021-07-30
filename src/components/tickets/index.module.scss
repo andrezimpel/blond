@@ -1,0 +1,49 @@
+@import "../../assets/mixins";
+
+.wrapper {
+  // background-color: var(--outline);
+  text-align: center;
+}
+
+.container {
+  @include container-enhanced;
+}
+
+.cover {
+  display: block;
+
+  img {
+    border-radius: 2px;
+  }
+}
+
+.text {
+  margin-top: 16px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 32px;
+  }
+}
+
+.headline {
+  color: var(--fill);
+  font-family: "Sensations";
+  font-size: 4em;
+  line-height: 1;
+  margin-bottom: 8px;
+  transform: rotate(-6deg);
+}
+
+.cta {
+  color: var(--black);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 4px 16px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--fill);
+    text-decoration: none;
+  }
+}
