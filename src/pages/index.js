@@ -1,12 +1,14 @@
+import React, { lazy } from "react"
+
 import Cover from '../components/cover'
 import Layout from "../components/layout"
 import Merch from '../components/merch'
 import Podcast from '../components/podcast'
-import React from "react"
 import Seo from "../components/seo"
 import Tickets from '../components/tickets'
 import loadable from '@loadable/component'
-const Video = loadable(() => import('../components/video'))
+
+const Video = lazy(() => import('../components/video'))
 
 const IndexPage = () => (
   <Layout>
