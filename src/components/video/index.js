@@ -1,4 +1,4 @@
-import { container, video, wrapper } from './index.module.scss'
+import { container, wrapper } from './index.module.scss'
 
 import React from 'react'
 import VideoEmbed from './embed'

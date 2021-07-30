@@ -5,7 +5,8 @@ import Podcast from '../components/podcast'
 import React from "react"
 import Seo from "../components/seo"
 import Tickets from '../components/tickets'
-import Video from '../components/video'
+import loadable from '@loadable/component'
+const Video = loadable(() => import('../components/video'))
 
 const IndexPage = () => (
   <Layout>
