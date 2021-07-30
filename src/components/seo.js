@@ -6,19 +6,21 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+import { graphql, useStaticQuery } from "gatsby"
+
+import { Helmet } from "react-helmet"
+import PropTypes from "prop-types"
+import sharingImage from '../images/blond-sharing-image.jpg'
+
+function Seo({ description, lang, meta, title, url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
-            author
+            siteTitle: title
+            siteUrl
           }
         }
       }
@@ -35,6 +37,12 @@ function Seo({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      link={[
+        {
+          href: site.siteMetadata.siteUrl + url,
+          rel: "canonical"
+        }
+      ]}
       meta={[
         {
           name: `description`,
@@ -47,6 +55,14 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.siteUrl + sharingImage,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl + url,
         },
         {
           property: `og:type`,
@@ -63,6 +79,10 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `twitter:title`,
           content: title,
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata.siteUrl + sharingImage,
         },
         {
           name: `twitter:description`,

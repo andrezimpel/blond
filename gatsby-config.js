@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Blond`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `Blond ist eine deutsche Indie-Pop-Band aus Chemnitz, die 2011 gegründet wurde. Am 31. Januar 2020 veröffentlichte die Band ihr Debütalbum Martini Sprite.`,
+    author: `@andrezimpel`,
+    siteUrl: `https://www.blond-band.de`,
   },
   plugins: [
     `gatsby-plugin-unknown-studios`,

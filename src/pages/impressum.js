@@ -5,8 +5,9 @@ import Text from '../components/text'
 
 const ImprintPage = () => (
   <Layout>
-    <Seo title="Impressum" />
+    <Seo title="Impressum" url='/impressum'/>
     <Text>
+      <h1>Impressum</h1>
       <h2>Angaben gemäß § 5 TMG:</h2>
     	<p>BLOND GbR<br/>
     	Senefelderstraße 40,<br/>

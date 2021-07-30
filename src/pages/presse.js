@@ -6,7 +6,7 @@ import VideoEmbed from '../components/video/embed'
 
 const ImprintPage = () => (
   <Layout>
-    <Seo title="Impressum" />
+    <Seo title="Presse" url='/presse'/>
     <Text>
       <h1>Presse</h1>
       <p><a href="https://landstreicher-booking.de/artists/blond">Pressematerial</a></p>

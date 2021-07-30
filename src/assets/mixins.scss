@@ -36,7 +36,10 @@
 
 @mixin container-enhanced {
   @include container;
+  @include padding;
+}
 
+@mixin padding {
   padding-bottom: 32px;
   padding-top: 32px;
 

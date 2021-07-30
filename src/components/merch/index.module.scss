@@ -3,13 +3,13 @@
 .wrapper {
   @include padding;
 
-  background-color: var(--fill);
+  background-color: var(--outline);
   display: block;
   text-align: center;
 }
 
 .cta {
-  color: white;
+  color: var(--black);
   cursor: pointer;
   display: inline-block;
   font-size: 2.4em;
@@ -19,7 +19,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: var(--outline);
+    color: var(--fill);
     text-decoration: none;
   }
 }

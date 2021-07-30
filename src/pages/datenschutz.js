@@ -5,7 +5,7 @@ import Text from '../components/text'
 
 const PrivacyPage = () => (
   <Layout>
-    <Seo title="Datenschutz" />
+    <Seo title="Datenschutz" url='/datenschutz'/>
     <Text>
     	<h1>Datenschutzerklärung</h1>
     	<h2>1. Datenschutz auf einen Blick</h2>
