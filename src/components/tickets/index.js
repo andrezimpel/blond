@@ -6,7 +6,7 @@ const Video = () => {
   return (
     <a href="https://krasserstoff.com/blond/1015/Tickets" target="_blank" className={wrapper} rel="noreferrer">
       <div className={cta}>
-        Hier jetzt Tickets kaufen
+        Jetzt hier Tickets kaufen
       </div>
     </a>
   )

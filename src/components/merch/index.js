@@ -6,7 +6,7 @@ const Merch = () => {
   return (
     <a href="https://krasserstoff.com/blond/#merchcat4" target="_blank" className={wrapper} rel="noreferrer">
       <div className={cta}>
-        Hier jetzt Merch kaufen
+        Jetzt hier Merch kaufen
       </div>
     </a>
   )
