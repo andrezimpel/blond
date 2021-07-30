@@ -3,7 +3,7 @@
 .wrapper {
   @include padding;
 
-  background-color: var(--blue);
+  background-color: var(--fill);
   display: block;
   text-align: center;
 }
@@ -19,7 +19,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: var(--pink);
+    color: var(--outline);
     text-decoration: none;
   }
 }

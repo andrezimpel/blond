@@ -12,8 +12,8 @@ const IndexPage = () => (
     <Seo title="Startseite" url='/'/>
     <Video/>
     <Cover/>
-    <Podcast/>
     <Tickets/>
+    <Podcast/>
     <Merch/>
   </Layout>
 )
