@@ -8,21 +8,21 @@ const Video = () => {
     <div className={wrapper}>
       <div className={container}>
         <div className={cover}>
-          <a href="https://blond.ffm.to/duundich" target="_blank" rel="noreferrer">
+          <a href="https://blond.ffm.to/meinboy" target="_blank" rel="noreferrer">
             <StaticImage
-              src="../../images/blond-du-und-ich-cover.jpg"
+              src="../../images/mein-boy-cover.jpeg"
               width={500}
               quality={95}
               formats={["AUTO", "WEBP", "AVIF"]}
-              alt="Blond - Du und Ich"
+              alt="Blond - Mein Boy"
             />
           </a>
         </div>
         <div className={text}>
           <h1 className={headline}>
-            Du und Ich
+            Mein Boy
           </h1>
-          <a href="https://blond.ffm.to/duundich" target="_blank" className={cta} rel="noreferrer">
+          <a href="https://blond.ffm.to/meinboy" target="_blank" className={cta} rel="noreferrer">
             Jetzt streamen
           </a>
         </div>

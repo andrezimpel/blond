@@ -7,7 +7,7 @@ const Video = () => {
   return (
     <div className={wrapper}>
       <div className={container}>
-        <VideoEmbed url='https://www.youtube.com/watch?v=pExywtT_KeY' lazy={true}/>
+        <VideoEmbed url='https://www.youtube.com/watch?v=ORJ0Tm75jk4' lazy={true}/>
       </div>
     </div>
   )
